@@ -9,7 +9,7 @@ menu = '''
 =====================
 
 ==> ''' 
-saldo = 0
+saldo = 1000
 limite = 500 
 extrato = '' '' 
 numero_saques = 0
@@ -21,7 +21,7 @@ while True:
     if open == 'd':
             
         valor = float(input('Informe o valor: ')) 
-        if valor > 0:
+        if valor >= 0:
             saldo += valor
             extrato += f'Depósito: R$ {valor:.2f}\n' 
         else: 
